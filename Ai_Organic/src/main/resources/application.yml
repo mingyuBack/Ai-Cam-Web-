@@ -1,0 +1,17 @@
+# src/main/resources/application.yml
+
+# 서버 설정 (선택 사항: 기본 포트는 8080)
+server:
+  port: 8080
+
+# ... 다른 설정들
+spring:
+  # 파일 업로드 관련 설정 (크기 제한 해제)
+  servlet:
+    multipart:
+      max-file-size: 10GB   # 개별 파일 최대 크기
+      max-request-size: 10GB # 전체 요청 최대 크기 (모든 파일 + 폼 데이터)
+
+yolo:
+  api:
+    url: http://localhost:5000
